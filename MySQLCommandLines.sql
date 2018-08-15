@@ -1,3 +1,5 @@
+
+
 -- Check if the two table has the same id and same name or not:
 SELECT *
 FROM ToxicPlant AS t1 join ToxicPlant AS t2 on t1.ToxicPlantID = t2.ToxicPlantID
@@ -14,3 +16,6 @@ ALTER TABLE PlantLivestockSymptom
 ADD CONSTRAINT livestockSymptomFK
 FOREIGN KEY (ToxicPlantID) REFERENCES ToxicPlant (ToxicPlantID),
 FOREIGN KEY (LivestockSymptomID) REFERENCES [FFL_ToxicPlants].[dbo].[LivestockSymptom] (SymptomID);
+                                                                                     
+--Change All column values to lowercase
+Update ToxicPlantPhoto SET [column name]=Lower([column name]);
