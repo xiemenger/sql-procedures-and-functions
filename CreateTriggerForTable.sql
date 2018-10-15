@@ -1,0 +1,3 @@
+CREATE TRIGGER test AFTER INSERT OR UPDATE OR DELETE ON t_trig_table
+
+        FOR EACH ROW EXECUTE PROCEDURE change_trigger();
