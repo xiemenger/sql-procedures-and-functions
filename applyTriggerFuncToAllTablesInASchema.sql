@@ -1,11 +1,11 @@
 DO $$
 	DECLARE 
-	account varchar := 'Priceadmin';
+	account varchar := 'user';
 	logSchemaName varchar := 'logging';
-	implementSchemaName varchar := 'pricing';
-	logTableName varchar := 'loggingchangeshistory';
-	triggerFunction varchar := 'changestrigger';
-	triggerNameInTable varchar := 'historytrigger';
+	implementSchemaName varchar := 'xxx';
+	logTableName varchar := 'yyy';
+	triggerFunction varchar := 'xx';
+	triggerNameInTable varchar := 'uuu';
 	_toexe text;
 	
 BEGIN 
